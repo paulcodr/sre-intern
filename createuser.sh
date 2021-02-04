@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Shell script for setting up a new CentOS 6/7 server.
+# This example is specifically for adding a new user, with additional customization done.
+# This shell script has more features, but they are turned of by commenting out the functions at the end of this script.
+
 _user="jdoe"
 _script="$(pwd)/$(basename $0)";
 _release=`rpm -q --qf "%{VERSION}" $(rpm -q --whatprovides redhat-release)`  # ex: 6 or 7
